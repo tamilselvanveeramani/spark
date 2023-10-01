@@ -55,9 +55,9 @@ class ErrorClassesJsonReader(jsonFileURLs: Seq[URL]) {
         s"Undefined error message parameter for error class: '$errorClass'. " +
           s"Parameters: $messageParameters")
     }
-  }
 
-  def getMessageTemplate(errorClass: String): String = {
+
+/*  def getMessageTemplate(errorClass: String): String = { */
     val errorClasses = errorClass.split("\\.")
     assert(errorClasses.length == 1 || errorClasses.length == 2)
 
