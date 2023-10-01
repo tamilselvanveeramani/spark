@@ -87,6 +87,15 @@ class ErrorClassesJsonReader(jsonFileURLs: Seq[URL]) {
   }
 }
 
+
+private object ErrorHandler{
+
+    print("test")
+
+
+    fadsfadsfasdf
+}
+
 private object ErrorClassesJsonReader {
   private val mapper: JsonMapper = JsonMapper.builder()
     .addModule(DefaultScalaModule)
